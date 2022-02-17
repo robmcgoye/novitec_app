@@ -1,0 +1,96 @@
+@import "bootstrap-icons/font/bootstrap-icons";
+@font-face {
+  font-family: "bootstrap-icons";
+  src: font-url("bootstrap-icons/font/fonts/bootstrap-icons.woff2") format("woff2"),
+    font-url("bootstrap-icons/font/fonts/bootstrap-icons.woff") format("woff");
+}
+@import 'bootstrap/dist/css/bootstrap';
+@import 'jquery-ui-dist/jquery-ui';
+@import 'fotorama/fotorama';
+
+#home-jumbo {
+//  background-image: asset_url('novi_sitelogo.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+//  background-color: red !important;
+}
+.text-brightred {
+  color:  #900; 
+}
+// .alert-warning{
+//   background-color: #f7941e !important;
+// }
+// orange #f7941e
+.btn-danger{
+  border-color:  #900 !important;
+  background-color: #900 !important;
+  &:hover{
+    background-color: white !important;
+    color: #900 !important;;
+  }
+}
+ .btn-outline-danger{
+  border-color:  #900 !important;
+  color:  #900 !important;
+  &:hover{
+    background-color: #900;
+    color: white !important;;
+  }
+}
+
+body{
+  background-color: #efefef;
+  //background-color: #ffece0;
+  //background-color: #ffe0cf;
+  //background-color: #f1d5b3;
+  //background-color: #f8c280;
+}
+
+.navbar-light {
+  // .navbar-brand {
+  //   color: $navbar-dark-brand-color;
+
+  //   &:hover,
+  //   &:focus {
+  //     color: $navbar-dark-brand-hover-color;
+  //   }
+  // }
+
+  .navbar-nav {
+    .nav-link {
+      color:  #1d1b1b !important;
+
+      &:hover,
+      &:focus {
+        color:  #000000 !important;
+        font-weight: 475;
+      }
+
+      &.disabled {
+        // color: #d1b49d !important;
+        color: #919191 !important;
+      }
+    }
+
+    .show > .nav-link,
+    .nav-link.active {
+      color:  #000000 !important;
+      font-weight: 475;
+    }
+  }
+
+  // .navbar-toggler {
+  //   color:  #ffffff !important;
+  //   // border-color: #ffffff !important;
+  // }
+
+  // .navbar-text {
+  //   color: $navbar-dark-color;
+  //   a,
+  //   a:hover,
+  //   a:focus {
+  //     color: $navbar-dark-active-color;
+  //   }
+  // }
+}
