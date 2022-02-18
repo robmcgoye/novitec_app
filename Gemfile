@@ -35,7 +35,7 @@ gem 'tinymce-rails', '~> 5.10', '>= 5.10.2'
 gem 'cocoon', '~> 1.2', '>= 1.2.15'
 # ========================================
 group :production do
-  # gem 'pg', '~> 1.2', '>= 1.2.3'
+   gem 'pg', '~> 1.2', '>= 1.2.3'
 end
 
 group :development, :test do
@@ -46,12 +46,12 @@ group :development, :test do
 end
 
 group :development do
-  # gem 'capistrano', '~> 3.11'
-  # gem 'capistrano-rails', '~> 1.4'
-  # gem 'capistrano-passenger', '~> 0.2.0'
-  # gem 'capistrano-rbenv', '~> 2.1', '>= 2.1.4'
-  # gem 'ed25519', '>= 1.2', '< 2.0'
-  # gem 'bcrypt_pbkdf', '>= 1.0', '< 2.0'
+  gem 'capistrano', '~> 3.11'
+  gem 'capistrano-rails', '~> 1.4'
+  gem 'capistrano-passenger', '~> 0.2.0'
+  gem 'capistrano-rbenv', '~> 2.1', '>= 2.1.4'
+  gem 'ed25519', '>= 1.2', '< 2.0'
+  gem 'bcrypt_pbkdf', '>= 1.0', '< 2.0'
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
   gem 'web-console', '>= 4.1.0'
   # Display performance information such as SQL time and flame graphs for each request in your browser.
