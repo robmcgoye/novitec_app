@@ -34,7 +34,7 @@
                         <em class="line-item"> <%= item.name %></em>
                     </div>
                   </div>
-                  <div class="col-md-auto">
+                  <div class="col-md-auto" style="width:125px">
                     <%= form_with url: "/update_cart_quantity", method: :patch do |f| %>
                       <%= f.hidden_field :id, value: "#{item.id}" %>
                       <%= f.number_field :quantity, class: "form-control-sm form-control-sm", style: "width: 3.5em", value: "#{quantity}", min: "1" %>
@@ -43,7 +43,7 @@
                       <% end %>
                     <% end %>
                   </div>
-                  <div class="col-3 text-end">
+                  <div class="col-3 text-end" style="width:100px">
                     <%= number_to_currency(price/100.0) %>
                     <% if quantity > 1 %>
                       <small class="text-muted" style="font-size: 9px">
@@ -51,7 +51,7 @@
                       </small>
                     <% end %>
                   </div>
-                  <div class="col-md-auto">
+                  <div class="col-md-auto" style="width:50px">
                     <%= link_to remove_from_cart_path(item), 
                           class: "cart-icon", method: :delete do %>
                       <i class="bi-trash"></i>

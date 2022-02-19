@@ -1,10 +1,10 @@
 <% provide(:title, "Product: #{@product.model_number}") %>
 <div class="container">
-  <div class="card mb-3 shadow-lg rounded border">
+  <div class="card mb-3 shadow-lg rounded border product-display">
     <div class="card-body text-dark">    
       <div class="container">
         <div class="row">
-          <div class="col-6">
+          <div class="col">
             <% if @product.product_images.present? %>
               <div class="fotorama" data-nav="thumbs" data-autoplay="true" data-transition="crossfade">
                 <% @product.product_images.each do |image| %>
@@ -13,7 +13,7 @@
               </div>
             <% end %>
           </div>
-          <div class="col-6">
+          <div class="col">
             <h4><%= @product.name %></h4>
             <p>
               <b class="text-brightred">BRAND:</b> <%= @product.brand.name %><br>

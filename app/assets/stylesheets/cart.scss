@@ -5,7 +5,7 @@
 
 .cart {
   background-color: #fff;
-  padding: 4vh 5vh;
+  padding: 2vh 5vh;
   border-bottom-left-radius: 1rem;
   border-top-left-radius: 1rem
 }
@@ -21,6 +21,7 @@
 .card-cart {
   margin: auto;
   max-width: 950px;
+  min-width: 320px;
   width: 90%;
   box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 1rem;
@@ -37,7 +38,7 @@
   background-color: #ddd;
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 1rem;
-  padding: 4vh;
+  padding: 3vh;
   color: rgb(65, 65, 65)
 }
 
@@ -57,11 +58,11 @@
 }
 
 .back-to-shop {
-  margin-top: 4.5rem
+  margin-top: 2.5rem
 }
 
 .cart-h5 {
-  margin-top: 4vh
+  margin-top: 1vh
 }
 
 .cart-h4 {
@@ -69,7 +70,7 @@
 }
 
 .cart-hr {
-  margin-top: 1.25rem
+  margin-top: 1rem
 }
 
 .quantity {
