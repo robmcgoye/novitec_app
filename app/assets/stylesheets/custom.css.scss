@@ -19,6 +19,22 @@
   color:  #900; 
 }
 
+.text-light-footer{
+  color:  #ffffffe3;
+  text-decoration: none;
+  &:hover, &:focus {
+    color: #f7941e;
+  } 
+}
+
+.text-dark-footer{
+  color: black;
+  text-decoration: none;
+  &:hover, &:focus {
+    color: white;
+  } 
+}
+
 .product-display{
   min-width: 330px;
 }
@@ -26,10 +42,7 @@
 .product-listing-col{
   min-width: 285px;
 }
-// .alert-warning{
-//   background-color: #f7941e !important;
-// }
-// orange #f7941e
+
 .btn-danger{
   border-color:  #900 !important;
   background-color: #900 !important;
