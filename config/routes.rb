@@ -5,6 +5,8 @@ Rails.application.routes.draw do
   devise_for :users
   root 'pages#home'
   get 'about_us', to: 'pages#about'
+  get 'terms', to: 'pages#terms'
+  get 'privacy_policy', to: 'pages#privacy_policy'
   resources :pages, only: [:edit, :update]
   post 'tinymce_assets', to: 'tinymce_assets#create'
   resources :contact_forms, only: [:new, :create] 
@@ -13,4 +15,7 @@ Rails.application.routes.draw do
   delete "remove_from_cart/:id", to: "cart#remove_from_cart", as: "remove_from_cart"
   delete "remove_all_from_cart", to: "cart#remove_all_from_cart"
   resources :cart, only: [:index]
+  post "checkout", to: "checkout#index"
+  post "checkout/address", to: "checkout#create", as: "checkout_address"
+
 end

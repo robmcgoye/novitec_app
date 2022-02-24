@@ -93,7 +93,7 @@
               </div>
             </div>
             <% #button_to "CHECKOUT", checkout_create_order_path, remote: true, data: { disable_with: "validating..."}, class: "btn btn-sm btn-outline-dark" %>
-            <%= button_to "CHECKOUT", '#', class: "btn btn-sm btn-outline-danger", method: :get %>
+            <%= button_to "CHECKOUT", checkout_path, class: "btn btn-sm btn-outline-danger", method: :post %>
           <% end %>
         </div>
       </div>

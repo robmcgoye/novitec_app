@@ -6,6 +6,15 @@ class PagesController < ApplicationController
     @page = load_page(:home)
   end
 
+  def terms
+    @page = load_page(:terms)
+  
+  end
+
+  def privacy_policy
+    @page = load_page(:privacy_policy)
+  end
+
   def about
     @page = load_page(:about)
   end

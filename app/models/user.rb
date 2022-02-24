@@ -9,5 +9,9 @@ class User < ApplicationRecord
   def full_name
     "#{first_name} #{last_name}"
   end
+  
+  after_create do
+    UserMailer.welcome_email(self).deliver_now
+  end
 
 end
