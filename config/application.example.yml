@@ -1,3 +1,4 @@
+# this is an example
 default: &default
   contact_form_email_to: "to@domain.com"
   new_orders_email_to: "to@domain.com"
