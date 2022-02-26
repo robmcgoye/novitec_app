@@ -1,0 +1,18 @@
+default: &default
+  contact_form_email_to: "rob@ntrcomp.net"
+  new_orders_email_to: "rob@ntrcomp.net"
+  send_email_from: "fdm@ntrcomp.net"
+  message_id_domain: "ntrcomp.net"
+  smtp_port: 587
+  smtp_server: "gator4236.hostgator.com"
+  
+development:
+  <<: *default
+  host: "http://10.50.55.30:3000"
+
+test:
+  <<: *default
+
+production:
+  <<: *default
+  host: "https://novi.ntr-tech.com"

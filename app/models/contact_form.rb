@@ -9,7 +9,7 @@ class ContactForm < MailForm::Base
     { 
       #this is the subject for the email generated, it can be anything you want
       subject: "Novi Contact Form",
-      to:  Rails.application.credentials.smtp[:to],
+      to:  CONFIG[:contact_form_email_to],
       from: %("#{name}" <#{email}>)
       #the from will display the name entered by the user followed by the email
     }

@@ -38,7 +38,7 @@ class ApplicationController < ActionController::Base
   end
 
   def load_cart
-    ids=[]
+    ids = []
     session[:cart].each{ |s| ids << s["id"] }
     @cart = Product.where(id: ids)
     session[:cart].each do |s|

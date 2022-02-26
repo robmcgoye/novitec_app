@@ -13,6 +13,8 @@ class CheckoutController < ApplicationController
     @address = Address.new(address_params)
     if @address.valid?
       # send email
+      CheckoutMailer.order_email(current_user, session[:cart], @address).deliver_now
+      CheckoutMailer.new_order_email(current_user, session[:cart], @address).deliver_now
       render 'success'
       session[:cart] = [] # empty cart = empty array      
     else
