@@ -24,7 +24,7 @@ class PagesController < ApplicationController
 
   def update
     if @page.update(page_params)
-      if  @page.name == "contact"
+      if @page.name == "contact"
         flash[:notice] = "The page was successfully updated."
         redirect_to new_contact_form_path
       else
