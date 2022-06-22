@@ -1,0 +1,19 @@
+current directory: /home/pc.admin/rails_projects/novitec_app/vendor/bundle/ruby/3.1.0/gems/bcrypt_pbkdf-1.1.0/ext/mri
+/home/pc.admin/.rbenv/versions/3.1.2/bin/ruby -I /home/pc.admin/.rbenv/versions/3.1.2/lib/ruby/3.1.0 -r ./siteconf20220622-6564-wh7var.rb extconf.rb
+creating Makefile
+
+current directory: /home/pc.admin/rails_projects/novitec_app/vendor/bundle/ruby/3.1.0/gems/bcrypt_pbkdf-1.1.0/ext/mri
+make DESTDIR\= clean
+
+current directory: /home/pc.admin/rails_projects/novitec_app/vendor/bundle/ruby/3.1.0/gems/bcrypt_pbkdf-1.1.0/ext/mri
+make DESTDIR\=
+compiling bcrypt_pbkdf.c
+compiling bcrypt_pbkdf_ext.c
+compiling blowfish.c
+compiling explicit_bzero.c
+compiling hash_sha512.c
+linking shared-object bcrypt_pbkdf_ext.so
+
+current directory: /home/pc.admin/rails_projects/novitec_app/vendor/bundle/ruby/3.1.0/gems/bcrypt_pbkdf-1.1.0/ext/mri
+make DESTDIR\= install
+/usr/bin/install -c -m 0755 bcrypt_pbkdf_ext.so ./.gem.20220622-6564-dcy390
