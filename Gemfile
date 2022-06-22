@@ -24,7 +24,7 @@ gem 'jbuilder', '~> 2.7'
 # ------------------------
 # files need when upgrading ruby to 3.1.2 & rails 6.1.4
 gem 'psych', '< 4'
-gem 'net-smtp', '~> 0.3.1'
+gem 'net-smtp', require: false
 # ------------------------
 # gem 'psych', '~> 4.0', '>= 4.0.4'
 
