@@ -1,6 +1,6 @@
 # config valid for current version and patch releases of Capistrano
-# lock "~> 3.16.0"
-lock "~> 3.17.0"
+lock "~> 3.16.0"
+# lock "~> 3.17.0"
 
 set :application, "novitec_app"
 set :repo_url, "git@github.com:robmcgoye/novitec_app.git"
