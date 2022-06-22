@@ -45,7 +45,8 @@ gem 'tinymce-rails', '~> 5.10', '>= 5.10.2'
 gem 'cocoon', '~> 1.2', '>= 1.2.15'
 # ========================================
 group :production do
-   gem 'pg', '~> 1.2', '>= 1.2.3'
+  gem 'strscan', '~> 3.0'
+  gem 'pg', '~> 1.2', '>= 1.2.3'
 end
 
 group :development, :test do
