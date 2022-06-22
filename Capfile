@@ -4,7 +4,8 @@ require "capistrano/setup"
 # Include default deployment tasks
 require "capistrano/deploy"
 set :rbenv_type, :user
-set :rbenv_ruby, '3.0.3'
+# set :rbenv_ruby, '3.0.3'
+set :rbenv_ruby, '3.1.2'
 
 # Load the SCM plugin appropriate to your project:
 #
