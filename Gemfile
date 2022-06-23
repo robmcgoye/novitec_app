@@ -25,8 +25,8 @@ gem 'jbuilder', '~> 2.7'
 # files need when upgrading ruby to 3.1.2 & rails 6.1.4
 gem 'psych', '< 4'
 # gem 'strscan', '~> 3.0'
+gem 'net-imap', require: false
 gem 'net-smtp', require: false
-# gem 'net-imap', require: false
 gem 'net-pop', require: false
 # ------------------------
 # gem 'psych', '~> 4.0', '>= 4.0.4'
