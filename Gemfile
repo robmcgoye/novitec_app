@@ -24,6 +24,7 @@ gem 'jbuilder', '~> 2.7'
 # ------------------------
 # files need when upgrading ruby to 3.1.2 & rails 6.1.4
 gem 'psych', '< 4'
+gem 'strscan', '~> 3.0'
 gem 'net-smtp', require: false
 gem 'net-imap', require: false
 gem 'net-pop', require: false
@@ -45,7 +46,7 @@ gem 'tinymce-rails', '~> 5.10', '>= 5.10.2'
 gem 'cocoon', '~> 1.2', '>= 1.2.15'
 # ========================================
 group :production do
-  gem 'strscan', '~> 3.0'
+  
   gem 'pg', '~> 1.2', '>= 1.2.3'
 end
 
