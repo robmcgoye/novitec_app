@@ -1,8 +1,8 @@
 default: &default
-  contact_form_email_to: "rob@ntrcomp.net"
-  new_orders_email_to: "rob@ntrcomp.net"
-  send_email_from: "fdm@ntrcomp.net"
-  message_id_domain: "ntrcomp.net"
+  contact_form_email_to: "sales@novi-tec.com"
+  new_orders_email_to: "sales@novi-tec.com"
+  send_email_from: "sales@novi-tec.com"
+  message_id_domain: "novi-tec.com"
   smtp_port: 587
   smtp_server: "gator4236.hostgator.com"
   
@@ -15,4 +15,4 @@ test:
 
 production:
   <<: *default
-  host: "https://novi.ntr-tech.com"
+  host: "https://novi-tec.com"
