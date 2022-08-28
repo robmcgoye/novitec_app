@@ -14,7 +14,7 @@ class CheckoutMailer < ApplicationMailer
     @user = user
     load_order(order_session)
     @address = address
-    mail(to: CONFIG[:new_orders_email_to], subject: 'New order to process')
+    mail(to: CONFIG[:new_orders_email_to], reply_to: user.email, subject: 'New order to process')
   end
   
   def get_quantity(product_id)
