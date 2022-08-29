@@ -19,8 +19,7 @@
       <b>Shiping Address :</b><br/>
       <%= "#{@user.full_name}" %><br/>
       <%= @address.address_line_1 %><br/>
-      <% byebug %>
-      <%= "#{@address.address_line_2} <br/>".html_safe if !@address.address_line_2.nil? %>
+      <%= "#{@address.address_line_2} <br/>".html_safe if !@address.address_line_2.empty? %>
       <%= "#{@address.city} #{@address.state}, #{@address.zip}" %><br/>
     </td>
   </tr>
@@ -65,5 +64,3 @@
 </table>
 <p>Please note that we will be contacting you to confirm fitment and stock. Then we will be collecting payment information from you before shipping. Once shipped We will be sending you the shipping information.</p>
 <p class="font-weight-bold">Thanks for shopping with us!</p>
-
-

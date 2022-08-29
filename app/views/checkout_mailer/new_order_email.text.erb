@@ -3,15 +3,15 @@
 Order Date : <%= Time.new.strftime("%b %e %Y") %>
 
 Shiping Address :
-<%= "#{@user.full_name}" %></li>
-<%= @address.address_line_1 %></li>
-<%= @address.address_line_2 %></li>
-<%= "#{@address.city} #{@address.state}, #{@address.zip}" %><
+<%= "#{@user.full_name}" %>
+<%= @address.address_line_1 %>
+<%= @address.address_line_2 if !@address.address_line_2.empty? %>
+<%= "#{@address.city} #{@address.state}, #{@address.zip}" %>
 
 Items :
 ===============================================
 <% total_price = 0 %>
-<% @order.each do |index| %>
+<% @order.each do |item| %>
   <% quantity = get_quantity(item.id) %>
   <% price = item.price * quantity %>
   <% total_price += price %>
@@ -20,4 +20,4 @@ Items :
 ===============================================
 Subtotal : <%= number_to_currency(total_price/100.0) %>
 Shipping : TBD
-Total : <%= number_to_currency(total_price/100.0) %>
+Total    : <%= number_to_currency(total_price/100.0) %>

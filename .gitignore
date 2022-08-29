@@ -40,4 +40,5 @@ yarn-debug.log*
 .yarn-integrity
 /public/uploads
 /config/application.yml
+/development_notes.txt
 # /vendor/*
